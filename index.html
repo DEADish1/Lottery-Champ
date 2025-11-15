@@ -1,120 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LuckyDraw - Random Lottery Picks</title>
-  <link rel="stylesheet" href="src/styles.css">
-</head>
-<body>
-  <div class="background"></div>
-
-  <main class="card">
-    <!-- Header -->
-    <header class="header">
-      <div class="header-left">
-        <h1 class="title">LuckyDraw</h1>
-        <p class="subtitle">Random lottery picks – for fun, not guarantees.</p>
-      </div>
-      <div class="header-right">
-        <span class="badge">Random Helper</span>
-      </div>
-    </header>
-
-    <!-- Game Selection -->
-    <section class="section">
-      <label class="label" for="game-select">Game Type</label>
-      <select id="game-select" class="select">
-        <option value="powerball">Powerball (US)</option>
-        <option value="megamillions">Mega Millions (US)</option>
-        <option value="euromillions">EuroMillions (EU/UK)</option>
-        <option value="classic649">Classic 6/49</option>
-        <option value="custom">Custom</option>
-      </select>
-    </section>
-
-    <!-- Custom Settings (hidden by default) -->
-    <section id="custom-settings" class="section custom-settings hidden">
-      <div class="custom-grid">
-        <div class="input-group">
-          <label class="label" for="main-count">Main Count</label>
-          <input type="number" id="main-count" class="input" min="1" max="10" value="5">
-        </div>
-        <div class="input-group">
-          <label class="label" for="main-max">Main Max</label>
-          <input type="number" id="main-max" class="input" min="2" max="99" value="49">
-        </div>
-        <div class="input-group">
-          <label class="label" for="bonus-count">Bonus Count</label>
-          <input type="number" id="bonus-count" class="input" min="0" max="5" value="0">
-        </div>
-        <div class="input-group">
-          <label class="label" for="bonus-max">Bonus Max</label>
-          <input type="number" id="bonus-max" class="input" min="0" max="99" value="0">
-        </div>
-      </div>
-    </section>
-
-    <!-- Lucky Word / Phrase -->
-    <section class="section">
-      <label class="label" for="lucky-word">Lucky Word / Phrase (optional)</label>
-      <input type="text" id="lucky-word" class="input" placeholder="e.g., grandma's birthday">
-      <p class="hint">Same word + same settings = same numbers</p>
-    </section>
-
-    <!-- Lock Numbers -->
-    <section class="section">
-      <div class="lock-group">
-        <label class="label" for="lock-main">Lock Main Numbers</label>
-        <input type="text" id="lock-main" class="input" placeholder="e.g., 3, 7, 11">
-        <p class="hint">Comma-separated numbers to keep fixed</p>
-      </div>
-      <div class="lock-group">
-        <label class="label" for="lock-bonus">Lock Bonus Numbers</label>
-        <input type="text" id="lock-bonus" class="input" placeholder="e.g., 9">
-        <p class="hint">Comma-separated bonus numbers to keep fixed</p>
-      </div>
-    </section>
-
-    <!-- Generate Button -->
-    <section class="section">
-      <button id="generate-btn" class="button">Generate Numbers</button>
-    </section>
-
-    <!-- Current Output -->
-    <section id="output-section" class="section output-section hidden">
-      <h3 class="section-title">Your Numbers</h3>
-      <div id="output" class="output">
-        <div class="number-row">
-          <div class="number-group">
-            <span class="group-label">Main</span>
-            <div id="main-numbers" class="balls"></div>
-          </div>
-          <div id="bonus-group" class="number-group hidden">
-            <span class="group-label">Bonus</span>
-            <div id="bonus-numbers" class="balls bonus"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- History -->
-    <section class="section">
-      <div class="history-header">
-        <h3 class="section-title">History</h3>
-        <button id="clear-history-btn" class="clear-btn">Clear</button>
-      </div>
-      <div id="history" class="history">
-        <p class="empty-history">No history yet. Generate some numbers!</p>
-      </div>
-    </section>
-
-    <!-- Footer Disclaimer -->
-    <footer class="footer">
-      <p>This tool is for entertainment only. It does <strong>not</strong> predict real lottery results.</p>
-    </footer>
-  </main>
-
-  <script src="src/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swift Apply - Smart Resume Builder</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
